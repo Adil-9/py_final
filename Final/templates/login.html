@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block link %} <link rel="stylesheet" href="static/css/login.css"> {% endblock %}
+
+{% block title %}
+Login
+{% endblock %}
+
+{% block pagename %}<span class="fs-4">Login</span>{% endblock %}
+
+{% block body %}
+
+<div style="height: 210px"></div>
+
+<body class="text-center">
+
+<main class="form-signin w-25 m-auto">
+
+  <form method = "POST">
+    <h1 class="h3 mb-3 fw-normal">Login</h1>
+
+
+    <div class="form-floating">
+      <input type="email"
+             class="form-control"
+             id="email"
+             name="email"
+             placeholder="name@example.com">
+      <label for="email">Email address</label>
+    </div>
+    <div class="form-floating">
+      <input type="password"
+             class="form-control"
+             id="password"
+             name="password"
+             placeholder="Password">
+      <label for="password">Password</label>
+    </div>
+
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
+  </form>
+</main>
+
+<div style="height: 387px"></div>
+<footer class="footer bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright © AITU Shop 2022</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">·</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">·</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+</footer>
+</body>
+{% endblock %}
+

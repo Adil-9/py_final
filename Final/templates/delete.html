@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Cabinet
+{% endblock %}
+
+{% block pagename %}<span class="fs-4">Personal</span>{% endblock %}
+
+
+{% block body %}
+<div style="height: 130px"></div>
+
+<!--change password-->
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-12">
+             <div class="col-md-6 offset-md-3">
+                <div class="card card-outline-secondary">
+                    <div class="card-header" style="text-align: center;">
+                        <h3 class="mb-0">Delete account</h3>
+                    </div>
+                    <div class="card-body">
+                        <form method="POST" class="form" role="form" autocomplete="off">
+                            <div class="header" style="margin-bottom: 10px; text-align: center;">
+                                <h3 class="mb-0">To delete account confirm password</h3>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPasswordNew">Password</label>
+                                <input type="password" class="form-control" id="inputPasswordNew" name="password1" required="">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPasswordNewVerify">Verify</label>
+                                <input type="password" class="form-control" id="inputPasswordNewVerify" name="password2" required="">
+                                <span class="form-text small text-muted">
+                                        By clicking on delete button you are going to permanently delete your account!
+                                    </span>
+                            </div>
+                            <div class="form-group" style="float: right">
+                              <button class="w-20 btn btn-lg " type="submit" style="background-color: red; color: white;">Delete</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+</div>
+    <!-- /form card change password -->
+<div style="height: 261px"></div>
+<footer class="footer bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright © AITU Shop 2022</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">·</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">·</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+</footer>
+{% endblock %}

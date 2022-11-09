@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block link %} <link rel="stylesheet" href="static/css/style_about_us.css"> {% endblock %}
+
+{%block title%}
+cart
+{%endblock%}
+
+{% block pagename %}<span class="fs-4">Cart</span>{% endblock %}
+
+
+{% block body %}
+<div style="height: 100px"></div>
+<div style="height: 500px; width: 1000px;" class="container" >
+    <div class="col">
+        <div class="row" style="background-color: blue;  border-top-right-radius: 3%; border-top-left-radius: 3%;">
+            <div class="container" style="margin-top: 100px; margin-bottom: 100px; margin-left: 100px">
+                <h1>Shirts in cart: {% autoescape off%} {{ data_shirts }} {% endautoescape%} </h1>
+            </div>
+        </div>
+        <div class="h-50"></div>
+        <div class="row" style="background-color:red; border-bottom-right-radius: 3%; border-bottom-left-radius: 3%;">
+            <div class="container" style="margin-top: 100px; margin-bottom: 100px; margin-left: 100px;">
+                <h1>Hoodies in cart: {% autoescape off%} {{ data_hoodies }} {% endautoescape%} </h1>
+            </div>
+        </div>
+        <div class="form-group" style="float: right">
+            <form method="POST">
+                <button class="w-20 btn btn-lg" type="submit" style="background-color: red; color: white; margin-top: 15px">Delete everything from cart</button>
+            </form>
+        </div>
+    </div>
+    <div>{% autoescape off%} {{ secret }} {% endautoescape%}</div>
+</div>
+
+{% endblock %}

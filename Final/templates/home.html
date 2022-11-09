@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block pagename %}<span class="fs-4">Home</span>{% endblock %}
+
+
+{% block body %}
+
+<header class="py-5" style="background-image: url('https://www.mockupworld.co/wp-content/uploads/2019/10/free-black-shopping-bag-mockup-psd-1000x683.jpg')">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="text-center my-5">
+                            <h1 class="display-5 fw-bolder text-white mb-2">Now it's time to buy something!</h1>
+                            <p class="lead text-white-50 mb-4">There are a bunch of big discounts to all clothes of the season! Don't miss your chance.</p>
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="/products">Products</a>
+                                <a class="btn btn-outline-light btn-lg px-4" href="/">Main</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+<section class="py-5 border-bottom" id="features">
+            <div class="container px-5 my-5">
+                <div class="row gx-5">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
+                        <h2 class="h4 fw-bolder">Electronics</h2>
+                        <p>Gaming computers and laptops, vaccum cleaners, irons, TV and more.</p>
+                        <a class="text-decoration-none" href="/products">
+                            Let's go!
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
+                        <h2 class="h4 fw-bolder">Clothes</h2>
+                        <p>ALl type of clothes for any season: jackets, trousers, hats, coats and more.</p>
+                        <a class="text-decoration-none" href="/products">
+                            Let's go!
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
+                        <h2 class="h4 fw-bolder">Tools</h2>
+                        <p>Screwdrivers, axes, hammers, pliers, dynamites, saws, swords, spears and more.</p>
+                        <a class="text-decoration-none" href="/products">
+                            Let's go!
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+<div style="height: 30px"></div>
+<footer class="footer bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright © AITU Shop 2022</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">·</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">·</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+</footer>
+{% endblock %}
